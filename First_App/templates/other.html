@@ -1,0 +1,7 @@
+<h1>Hello World!</h1>
+        <ul>
+            {% for item in list%}
+            <li {% if item ==89%}style="color:blue"{%endif%}>{{item}}</li>
+            {% endfor %}
+        </ul>
+        <p> {{list}} </p>
