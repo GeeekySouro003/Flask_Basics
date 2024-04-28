@@ -2,11 +2,13 @@
 {%block title%}Index Page{%endblock%}
 
 {%block content %}
-<h1>Hello World!</h1>
-        <ul>
-            {% for item in list%}
-            <li {% if item ==89%}style="color:blue"{%endif%}>{{item}}</li>
-            {% endfor %}
-        </ul>
-        <p> {{list}} </p>
+<h1>Jninja Filters</h1>
+<p> {{random_text }}</p>
+<p> {{random_text |upper }}</p>
+<p> {{random_text |lower }}</p>
+<p> {{random_text |replace('l','L')}}</p>
+<p> {{random_text |reverse_str}} </p>
+<p> {{random_text |repeat}} </p>
+<p> {{random_text |repeat(7)}} </p>
+<p> {{random_text |alternate_case}} </p>
 {% endblock%}
