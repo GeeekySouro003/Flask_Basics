@@ -7,7 +7,7 @@ def index():
     myname="Souradip"
     myresult=33 + 36
     mylist=[34,67,12,89,44,56,90]
-    return render_template('index.html',result=myresult,name=myname,list=mylist)
+    return render_template('other.html',result=myresult,name=myname,list=mylist)
 
 
 if __name__ == '__main__':
